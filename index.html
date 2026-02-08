@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vortex 3D | Diseño y Modelado Mecánico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING DECORATIONS -->
+  <div class="side-decoration left">
+    <div class="deco-line"></div>
+    <div class="deco-circle"></div>
+    <div class="deco-square"></div>
+    <div class="deco-triangle"></div>
+  </div>
+
+  <div class="side-decoration right">
+    <div class="deco-line"></div>
+    <div class="deco-circle"></div>
+    <div class="deco-square"></div>
+    <div class="deco-triangle"></div>
+  </div>
+
+  <!-- FLOATING ORBS -->
+  <div class="floating-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="cyber-grid"></div>
+    <div class="particles"></div>
+    <div class="hero-content">
+      <div class="neon-border">
+        <h1 class="glitch" data-text="Vortex 3D Studio">Vortex 3D Studio</h1>
+      </div>
+      <p class="hero-subtitle">
+        <span class="typing-effect">Diseño y modelado 3D mecánico profesional con SolidWorks y AutoCad.</span>
+        <br>
+        Soluciones técnicas listas para fabricación, impresión 3D y proyectos académicos.
+      </p>
+      <a href="#contacto" class="btn pulse-btn">
+        <span class="btn-text">Solicitar cotización</span>
+        <span class="btn-glow"></span>
+      </a>
+    </div>
+    <div class="hero-img-container">
+      <div class="hologram-effect"></div>
+      <img src="images/pieza-vortex-01.png" class="hero-img floating" alt="Diseño mecánico 3D">
+      <div class="scan-line"></div>
+    </div>
+  </header>
+
+
+
+  <!-- SERVICIOS -->
+  <section class="section services-section">
+    <div class="section-bg"></div>
+    <h2 class="section-title cyber-title">
+      <span class="title-line"></span>
+      Servicios
+      <span class="title-line"></span>
+    </h2>
+    <div class="cards">
+      <div class="card" onclick="openModal('modal1')">
+        <div class="card-corner tl"></div>
+        <div class="card-corner tr"></div>
+        <div class="card-corner bl"></div>
+        <div class="card-corner br"></div>
+        <div class="card-icon">🔧</div>
+        <h3>Modelado 3D Mecánico</h3>
+        <p>
+          Diseño de piezas y ensamblajes funcionales en SolidWorks,
+          siguiendo criterios reales de ingeniería mecánica.
+        </p>
+        <ul>
+          <li>Archivos STEP / STL</li>
+          <li>Ensamblajes y despieces</li>
+          <li>Revisiones incluidas</li>
+        </ul>
+        <div class="card-shine"></div>
+        <div class="click-hint">Click para ver más</div>
+      </div>
+      <div class="card" onclick="openModal('modal2')">
+        <div class="card-corner tl"></div>
+        <div class="card-corner tr"></div>
+        <div class="card-corner bl"></div>
+        <div class="card-corner br"></div>
+        <div class="card-icon">📐</div>
+        <h3>Planos Técnicos</h3>
+        <p>Planos 2D acotados listos para fabricación o impresión 3D.</p>
+        <div class="card-shine"></div>
+        <div class="click-hint">Click para ver más</div>
+      </div>
+      <div class="card" onclick="openModal('modal3')">
+        <div class="card-corner tl"></div>
+        <div class="card-corner tr"></div>
+        <div class="card-corner bl"></div>
+        <div class="card-corner br"></div>
+        <div class="card-icon">🖨️</div>
+        <h3>Diseño para Impresión 3D</h3>
+        <p>Modelos optimizados para FDM o resina, con tolerancias correctas.</p>
+        <div class="card-shine"></div>
+        <div class="click-hint">Click para ver más</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+      <h2 class="modal-title">🔧 Modelado 3D Mecánico</h2>
+      
+      <div class="modal-body">
+        <div class="modal-description">
+          <h3>¿Qué incluye este servicio?</h3>
+          <p>
+            Diseño profesional de piezas mecánicas y ensamblajes completos utilizando SolidWorks, 
+            el software líder en ingeniería mecánica. Cada proyecto se desarrolla siguiendo 
+            estándares industriales y criterios de fabricabilidad.
+          </p>
+          
+          <h3>Características principales:</h3>
+          <ul>
+            <li><strong>Modelado paramétrico:</strong> Diseños editables y adaptables a cambios</li>
+            <li><strong>Ensamblajes funcionales:</strong> Simulación de movimientos y ajustes</li>
+            <li><strong>Análisis de interferencias:</strong> Verificación de compatibilidad entre piezas</li>
+            <li><strong>Documentación técnica:</strong> Especificaciones completas del diseño</li>
+            <li><strong>Formatos de exportación:</strong> STEP, IGES, STL, Parasolid</li>
+            <li><strong>Revisiones ilimitadas:</strong> Hasta lograr el resultado deseado</li>
+          </ul>
+
+          <h3>Ideal para:</h3>
+          <p>
+            Prototipos industriales, piezas de repuesto, proyectos académicos, 
+            desarrollo de productos, maquinaria personalizada, y cualquier aplicación 
+            que requiera precisión mecánica.
+          </p>
+        </div>
+
+        <div class="modal-gallery">
+          <h3>Ejemplos de trabajos:</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Ejemplo 1">
+              <p>Pieza mecánica compleja</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Ejemplo 2">
+              <p>Ensamblaje funcional</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Ejemplo 3">
+              <p>Componente industrial</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Ejemplo 4">
+              <p>Sistema de engranajes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#contacto" class="modal-btn" onclick="closeModal('modal1')">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+      <h2 class="modal-title">📐 Planos Técnicos</h2>
+      
+      <div class="modal-body">
+        <div class="modal-description">
+          <h3>¿Qué incluye este servicio?</h3>
+          <p>
+            Elaboración de planos técnicos 2D profesionales con todas las especificaciones 
+            necesarias para fabricación. Cada plano cumple con normas internacionales de 
+            dibujo técnico (ISO, ANSI, DIN).
+          </p>
+          
+          <h3>Características principales:</h3>
+          <ul>
+            <li><strong>Acotación completa:</strong> Dimensiones precisas y tolerancias</li>
+            <li><strong>Vistas normalizadas:</strong> Proyecciones ortogonales estándar</li>
+            <li><strong>Cortes y secciones:</strong> Detalles internos cuando sea necesario</li>
+            <li><strong>Tabla de materiales:</strong> Especificaciones de componentes</li>
+            <li><strong>Notas técnicas:</strong> Acabados superficiales, tratamientos</li>
+            <li><strong>Formatos estándar:</strong> PDF, DWG, DXF</li>
+          </ul>
+
+          <h3>Ideal para:</h3>
+          <p>
+            Talleres mecánicos, fabricación CNC, corte láser, proyectos de construcción, 
+            documentación técnica, presentaciones profesionales, y cualquier proceso 
+            que requiera especificaciones exactas.
+          </p>
+        </div>
+
+        <div class="modal-gallery">
+          <h3>Ejemplos de planos:</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Plano 1">
+              <p>Plano de fabricación</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Plano 2">
+              <p>Plano de ensamblaje</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Plano 3">
+              <p>Detalle técnico</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Plano 4">
+              <p>Plano acotado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#contacto" class="modal-btn" onclick="closeModal('modal2')">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+      <h2 class="modal-title">🖨️ Diseño para Impresión 3D</h2>
+      
+      <div class="modal-body">
+        <div class="modal-description">
+          <h3>¿Qué incluye este servicio?</h3>
+          <p>
+            Diseño y optimización de modelos 3D específicamente para impresión 3D. 
+            Cada diseño considera las limitaciones y ventajas de la tecnología de 
+            impresión (FDM, SLA, SLS) para garantizar resultados perfectos.
+          </p>
+          
+          <h3>Características principales:</h3>
+          <ul>
+            <li><strong>Optimización de geometría:</strong> Diseño adaptado a impresión 3D</li>
+            <li><strong>Tolerancias ajustadas:</strong> Piezas que encajan perfectamente</li>
+            <li><strong>Soportes minimizados:</strong> Reducción de material de soporte</li>
+            <li><strong>Análisis de imprimibilidad:</strong> Verificación antes de imprimir</li>
+            <li><strong>Archivos listos:</strong> STL optimizados y testeados</li>
+            <li><strong>Múltiples tecnologías:</strong> FDM, resina, SLS</li>
+          </ul>
+
+          <h3>Ideal para:</h3>
+          <p>
+            Prototipos rápidos, piezas funcionales, repuestos personalizados, 
+            productos finales, herramientas y fixtures, modelos arquitectónicos, 
+            y cualquier aplicación de manufactura aditiva.
+          </p>
+        </div>
+
+        <div class="modal-gallery">
+          <h3>Ejemplos de diseños:</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Diseño 1">
+              <p>Pieza optimizada FDM</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Diseño 2">
+              <p>Modelo para resina</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Diseño 3">
+              <p>Ensamblaje imprimible</p>
+            </div>
+            <div class="gallery-item">
+              <img src="images/pieza-vortex-01.png" alt="Diseño 4">
+              <p>Prototipo funcional</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#contacto" class="modal-btn" onclick="closeModal('modal3')">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTAFOLIO -->
+  <section class="section dark">
+    <h2 class="section-title cyber-title">
+      <span class="title-line"></span>
+      Portafolio
+      <span class="title-line"></span>
+    </h2>
+    <p class="subtitle">Algunos ejemplos de diseño (proyectos demostrativos)</p>
+
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <div class="portfolio-badge">Nuevo</div>
+        <div class="portfolio-overlay">
+          <span class="view-text">Ver proyecto</span>
+        </div>
+        <img src="images/pieza-vortex-01.png" alt="Pieza mecánica diseñada en SolidWorks">
+        <p>Pieza mecánica funcional</p>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-badge">Destacado</div>
+        <div class="portfolio-overlay">
+          <span class="view-text">Ver proyecto</span>
+        </div>
+        <img src="images/pieza-vortex-01.png" alt="Ensamblaje mecánico SolidWorks">
+        <p>Ensamblaje técnico</p>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-badge">Popular</div>
+        <div class="portfolio-overlay">
+          <span class="view-text">Ver proyecto</span>
+        </div>
+        <img src="images/pieza-vortex-01.png" alt="Diseño para impresión 3D">
+        <p>Diseño optimizado para impresión 3D</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="section about">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="about-content">
+      <div class="about-card">
+        <div class="about-icon">👨‍💻</div>
+        <p>
+          Diseñador 3D con enfoque técnico y experiencia en SolidWorks.
+          Mi prioridad es entregar modelos funcionales, claros y listos para fabricación,
+          no solo visualmente atractivos.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon">⚙️</div>
+            <div class="skill-name">SolidWorks</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">📐</div>
+            <div class="skill-name">AutoCAD</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🖨️</div>
+            <div class="skill-name">Impresión 3D</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">📊</div>
+            <div class="skill-name">Planos Técnicos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section dark" id="contacto">
+    <h2 class="section-title">Contacto</h2>
+    <p class="contact-intro">¿Tienes un proyecto? Hablemos.</p>
+
+    <div class="contact">
+      <a href="mailto:VorteX3d@gmail.com" class="contact-link">
+        <span class="contact-icon">📧</span>
+        VorteX3d@gmail.com
+      </a>
+      <a href="https://wa.me/5731236628963" target="_blank" class="contact-link">
+        <span class="contact-icon">💬</span>
+        WhatsApp: 31236628963
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid"></div>
+    <p>© 2026 Vortex 3D <span class="footer-pulse">●</span> Powered by Innovation</p>
+  </footer>
+
+  <script>
+    // Modal functions
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        modal.classList.add('modal-active');
+      }, 10);
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      modal.classList.remove('modal-active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }, 300);
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        closeModal(event.target.id);
+      }
+    }
+
+    // Close modal with ESC key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => {
+          if (modal.style.display === 'flex') {
+            closeModal(modal.id);
+          }
+        });
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.section, .card, .portfolio-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    window.scrollTo(0, 0);
+  </script>
+</body>
+
+
+</html>
